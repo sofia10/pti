@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Roboto-med';
+  src: url('../fonts/fonts/Roboto-Medium.eot');
+  src: url('../fonts/fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/fonts/Roboto-Medium.woff2') format('woff2'),
+  url('../fonts/fonts/Roboto-Medium.woff') format('woff'),
+  url('../fonts/fonts/Roboto-Medium.ttf') format('truetype'),
+  url('../fonts/fonts/Roboto-Medium.svg#Roboto-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BPG WEB 001 Caps';
+  src: url('../fonts/fonts/BPGWEB001Caps.eot');
+  src: url('../fonts/fonts/BPGWEB001Caps.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/fonts/BPGWEB001Caps.woff2') format('woff2'),
+  url('../fonts/fonts/BPGWEB001Caps.woff') format('woff'),
+  url('../fonts/fonts/BPGWEB001Caps.ttf') format('truetype'),
+  url('../fonts/fonts/BPGWEB001Caps.svg#BPGWEB001Caps') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BPG Arial';
+  src: url('../fonts/fonts/BPGArial.eot');
+  src: url('../fonts/fonts/BPGArial.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/fonts/BPGArial.woff2') format('woff2'),
+  url('../fonts/fonts/BPGArial.woff') format('woff'),
+  url('../fonts/fonts/BPGArial.ttf') format('truetype'),
+  url('../fonts/fonts/BPGArial.svg#BPGArial') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+$primary-font: 'BPG Arial';
+$caps-font: 'BPG WEB 001 Caps';
+
+$roboto: 'Roboto-med';

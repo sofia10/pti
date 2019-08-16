@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Roboto-med';
+  src: url('../fonts/fonts/Roboto-Medium.eot');
+  src: url('../fonts/fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/fonts/Roboto-Medium.woff2') format('woff2'),
+  url('../fonts/fonts/Roboto-Medium.woff') format('woff'),
+  url('../fonts/fonts/Roboto-Medium.ttf') format('truetype'),
+  url('../fonts/fonts/Roboto-Medium.svg#Roboto-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway-semibold';
+  src: url('../fonts/fonts/Raleway-SemiBold.eot');
+  src: url('../fonts/fonts/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/fonts/Raleway-SemiBold.woff2') format('woff2'),
+  url('../fonts/fonts/Raleway-SemiBold.woff') format('woff'),
+  url('../fonts/fonts/Raleway-SemiBold.ttf') format('truetype'),
+  url('../fonts/fonts/Raleway-SemiBold.svg#Raleway-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+$roboto: 'Roboto-med';
+
+$primary-font: 'Roboto-med';
+$caps-font: 'Raleway-semibold';

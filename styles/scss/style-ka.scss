@@ -1,0 +1,27 @@
+@import "../commons/default";
+@import "../fonts/scss/fonts-ka";
+body{
+  font-size: 14px;
+  font-family: $primary-font;
+  background: $body-color;
+  color: $text;}
+
+.bg_half{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#0a98aa, #43bcca);
+  img{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+.site__header{
+
+}
+.site__content{}
+.site__footer{}
