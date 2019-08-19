@@ -51,3 +51,99 @@ function navigation(){
     });
 }
 navigation();
+
+function remindButton(){
+    $('.button-bg').click(function() {
+        $(this).toggleClass('active');
+    });
+}
+function showMap(){
+    $('.map-btn').click(function(){
+        $('#map').toggleClass('active');
+        $(this).toggleClass('active');
+    });
+}
+function steps(){
+    $('.first_btn').click(function(){
+       $('.first_process').removeClass('active');
+        $('.step1_row').addClass('active');
+    });
+
+
+    $('.step2_btn').click(function(){
+        $('.step2_row').removeClass('active');
+        $('.step3_row').addClass('active');
+    });
+    $('.step3_btn').click(function(){
+        $('.step3_row').removeClass('active');
+        $('.step4_row').addClass('active');
+    });
+    $('.step4_btn').click(function(){
+        $('.step4_row').removeClass('active');
+        $('.step5_row').addClass('active');
+    });
+
+    $('.back_to2').click(function(){
+        $('.step3_row').removeClass('active');
+        $('.step2_row').addClass('active');
+    });
+
+    $('.back_to3').click(function(){
+        $('.step4_row').removeClass('active');
+        $('.step3_row').addClass('active');
+    });
+
+    $('.cam-button').click(function(){
+        $('.text-block').hide();
+        $('#map').hide();
+        $('.video').show();
+        $(this).removeClass('active');
+    });
+    $('.map-button').click(function(){
+        $('.text-block').hide();
+        $('.video').hide();
+        $('#map').show();
+        $(this).removeClass('active');
+    });
+}
+
+function accountInfo() {
+    $('.user-info .EditSymbol').on( "click", function() {
+        $(this).closest('.user-info').find('input').removeAttr("disabled");
+        $(this).removeClass('active');
+        $(this).closest('.edit').find('.check').addClass('active');
+    });
+    $('.user-info .check').on( "click", function() {
+        $(this).closest('.user-info').find('input').attr("disabled", true);
+        $(this).removeClass('active');
+        $(this).closest('.edit').find('.EditSymbol').addClass('active');
+    });
+}
+
+function vehicles(){
+    $('.vehicles-item').click(function(){
+        $('.vehicles-item').removeClass('active');
+        $(this).addClass('active');
+        var type = $(this).attr('vehicle');
+        console.log(type);
+        $('.transgeorgia').removeClass('active');
+        $('.transgeorgia[transgeorgia='+type+']').addClass('active');
+    });
+
+    $('.top').click(function(){
+       $(this).closest('.mobile-vehicle').toggleClass('active');
+       $(this).find('.arrow').toggleClass('active');
+    });
+}
+vehicles();
+
+function faq(){
+    // $('.question').click(function(){
+    //     $('.faq-item.active').not(this).removeClass('active');
+    //    $(this).closest('.faq-item').toggleClass('active');
+    // });
+
+    $(".question").on('click', function(){
+        $(this).closest('.faq-item').toggleClass('active').siblings().removeClass('active');
+    })
+}

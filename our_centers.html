@@ -191,7 +191,7 @@
         <div class="container">
             <div class="content account_page centers_page">
                 <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-lg-5">
                         <h1 class="title">Our Cervice Centers</h1>
                         <div class="account-block left d-flex flex-column align-items-center">
                             <div class="choose">Choose a center:</div>
@@ -226,43 +226,107 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="search">
-                                    <input type="text" placeholder="SEARCH...">
-                                    <button type="button">
-
-                                        <img src="images/search-symbol.png"
-                                             srcset="images/search-symbol@2x.png 2x,
-             images/search-symbol@3x.png 3x"
-                                             class="SearchSymbol">
+                                <div class="dropdowns added-drop d-flex justify-content-between align-items-center">
+                                    <button class="map-btn d-block d-lg-none">
+                                        <span class="show">SHOW MAP</span>
+                                        <span class="hide">HIDE MAP</span>
+                                        <img src="images/chevron-left-symbol.png"
+                                             srcset="images/chevron-left-symbol@2x.png 2x,
+                                        images/chevron-left-symbol@3x.png 3x"
+                                             class="ChevronLeftSymbol">
                                     </button>
+                                    <div class="search">
+                                        <input type="text" placeholder="SEARCH...">
+                                        <button type="button">
+
+                                            <img src="images/search-symbol.png"
+                                                 srcset="images/search-symbol@2x.png 2x,
+             images/search-symbol@3x.png 3x"
+                                                 class="SearchSymbol">
+                                        </button>
+                                    </div>
                                 </div>
                                 <div class="line"></div>
-                                <div class="loc d-flex">
-                                    <div class="txt">
-                                        Aghmashenebeli Ave. 2th km, #20
-                                    </div>
-                                    <div class="icon">
-                                        <img src="images/small-map-pin.png"
-                                             srcset="images/small-map-pin@2x.png 2x,
-             images/small-map-pin@3x.png 3x"
-                                             class="SmallMapPin">
+                                <div class="locs">
+                                    <div class="loc d-flex">
+                                        <div class="txt">
+                                            Aghmashenebeli Ave. 2th km, #20
+                                        </div>
+                                        <div class="icon">
+                                            <img src="images/small-map-pin.png"
+                                                 srcset="images/small-map-pin@2x.png 2x,
+                 images/small-map-pin@3x.png 3x"
+                                                 class="SmallMapPin">
 
+                                        </div>
+                                    </div>
+                                    <div class="loc d-flex">
+                                        <div class="txt">
+                                            Aghmashenebeli Ave. 2th km, #20
+                                        </div>
+                                        <div class="icon">
+                                            <img src="images/small-map-pin.png"
+                                                 srcset="images/small-map-pin@2x.png 2x,
+                 images/small-map-pin@3x.png 3x"
+                                                 class="SmallMapPin">
+
+                                        </div>
+                                    </div>
+                                    <div class="loc d-flex">
+                                        <div class="txt">
+                                            Aghmashenebeli Ave. 2th km, #20
+                                        </div>
+                                        <div class="icon">
+                                            <img src="images/small-map-pin.png"
+                                                 srcset="images/small-map-pin@2x.png 2x,
+                 images/small-map-pin@3x.png 3x"
+                                                 class="SmallMapPin">
+
+                                        </div>
+                                    </div>
+                                    <div class="loc d-flex">
+                                        <div class="txt">
+                                            Aghmashenebeli Ave. 2th km, #20
+                                        </div>
+                                        <div class="icon">
+                                            <img src="images/small-map-pin.png"
+                                                 srcset="images/small-map-pin@2x.png 2x,
+                 images/small-map-pin@3x.png 3x"
+                                                 class="SmallMapPin">
+
+                                        </div>
                                     </div>
                                 </div>
+                                <a href="#!" class="proceed">PROCEED</a>
                             </form>
                         </div>
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-lg-7">
                         <div id="map">
 
                         </div>
                     </div>
+                    <div class="locations d-block d-lg-none">
+                        <div class="loc d-flex">
+                            <div class="txt">
+                                Aghmashenebeli Ave. 2th km, #20
+                            </div>
+                            <div class="icon">
+                                <img src="images/small-map-pin.png"
+                                     srcset="images/small-map-pin@2x.png 2x,
+             images/small-map-pin@3x.png 3x"
+                                     class="SmallMapPin">
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <a href="#!" class="proceed d-block d-lg-none">PROCEED</a>
             </div>
         </div>
     </main>
 
-    <footer class="footer">
+    <footer class="footer white-footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
@@ -493,6 +557,9 @@
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsoF1yBpQMNBQy8DpwIJkhFnYTJBTG2_Y&callback=initMap"
             async defer>
+    </script>
+    <script>
+        showMap();
     </script>
 </body>
 </html>

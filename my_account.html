@@ -80,7 +80,14 @@
         </div>
         <div class="sign">
             <div class="container">
-                <a href="#!" class="sign-link d-flex align-items-center justify-content-between">Log in or Sign Up
+                <a href="#!" class="sign-link d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <img src="images/user-white.png"
+                             srcset="images/user-white@2x.png 2x,
+                 images/user-white@3x.png 3x"
+                             class="MailSymbol">
+                        <div class="hello_title text-center">Hello, <span> Bako</span>!</div>
+                    </div>
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
                         <defs>
                             <path id="b" d="M12.586 13H3a1 1 0 0 1 0-2h9.586l-2.293-2.293a1 1 0 0 1 1.414-1.414l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414-1.414L12.586 13zM14 23a1 1 0 0 1 0-2h5a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-5a1 1 0 0 1 0-2h5a3 3 0 0 1 3 3v16a3 3 0 0 1-3 3h-5z"/>
@@ -149,8 +156,12 @@
                     <a href="#!" class="header_menu header-style">FAQ</a>
                 </div>
                 <div class="col-sm-6 col-4 d-flex align-items-center justify-content-end">
-                    <div class="login">
-                        <a href="#!" class="login-btn header-style">LOG IN or REGISTER</a>
+                    <div class="user d-flex align-items-center">
+                        <img src="images/user-icon-photo-placeholder.png"
+                             srcset="images/user-icon-photo-placeholder@2x.png 2x,
+             images/user-icon-photo-placeholder@3x.png 3x"
+                             class="User-Icon-photo-placeholder">
+                        BAKO PATIASHVILI
                     </div>
                     <ul class="lang d-flex flex-column">
                         <li style="order: 4;">
@@ -189,24 +200,83 @@
 
     <main>
         <div class="container">
-            <div class="content account_page">
+            <div class="content account_page my_account">
                 <h1 class="title">My account</h1>
                 <div class="row">
-                    <div class="col-md-5">
+                    <div class="d-block d-lg-none hello-block">
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <div class="col-4 text-center">
+                                <img src="images/user-white.png"
+                                     srcset="images/user-white@2x.png 2x,
+             images/user-white@3x.png 3x"
+                                     class="User-Icon-photo-placeholder">
+                            </div>
+                            <div class="col-4">
+                                <a href="#!">
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="hello_title text-center">Hello, <span> Bako</span>!</div>
+                    </div>
+                    <div class="col-lg-5">
                         <div class="account-block left d-flex flex-column align-items-center">
-                            <img src="images/user-icon-photo-placeholder.png"
-                                 srcset="images/user-icon-photo-placeholder@2x.png 2x,
-             images/user-icon-photo-placeholder@3x.png 3x"
+                            <img src="images/aqua-user.png"
+                                 srcset="images/aqua-user@2x.png 2x,
+             images/aqua-user@3x.png 3x"
                                  class="User-Icon-photo-placeholder">
                             <h2 class="username">Bako Patiashvili</h2>
                             <form action="">
-                                <input type="text">
+                                <div class="d-flex align-items-center justify-content-between user-info">
+                                    <label>Full Name:</label>
+                                    <input type="text" value="Bako Patiashvili" disabled>
+                                    <button class="edit">
+                                        <img src="images/edit-symbol.png"
+                                             srcset="images/edit-symbol@2x.png 2x,
+                                             images/edit-symbol@3x.png 3x"
+                                             class="EditSymbol active">
+                                        <img src="images/checked1.png" alt="check" class="check">
+                                    </button>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between user-info">
+                                    <label>Phone #:</label>
+                                    <input type="text" value="+995 557 12 34 56">
+                                    <button class="edit">
+                                        <img src="images/edit-symbol.png"
+                                             srcset="images/edit-symbol@2x.png 2x,
+                                             images/edit-symbol@3x.png 3x"
+                                             class="EditSymbol active">
+                                        <img src="images/checked1.png" alt="check" class="check">
+                                    </button>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between user-info">
+                                    <label>E-mail:</label>
+                                    <input type="text" value="kpatiashvili.cs@gmail.com">
+                                    <button class="edit">
+                                        <img src="images/edit-symbol.png"
+                                             srcset="images/edit-symbol@2x.png 2x,
+                                             images/edit-symbol@3x.png 3x"
+                                             class="EditSymbol active">
+                                        <img src="images/checked1.png" alt="check" class="check">
+                                    </button>
+                                </div>
+                                <div class="remind d-flex align-items-center justify-content-center">
+                                    Always remind me of my bookings via SMS
+                                    <div class="button-bg">
+                                        <a href="#" class="toggle-button"></a>
+                                    </div>
+                                </div>
+                                <div class="d-flex btns justify-content-center">
+                                    <a href="#!" class="primary-btn btns-item">EDIT PASSWORD</a>
+                                    <a href="#!" class="secondary-btn btns-item">LOG OUT</a>
+                                </div>
                             </form>
                         </div>
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-lg-7 d-none d-lg-block">
                         <div class="account-block right">
-                            <div class="row">
+                            <div class="d-flex flex-wrap btns-row">
                                 <div class="col-md-6">
                                     <a href="#!" class="button d-flex align-items-center justify-content-center">ADD A VEHICLE
                                         <img src="images/add-vehicle-symbol.png"
@@ -214,6 +284,7 @@
              images/add-vehicle-symbol@3x.png 3x"
                                              class="AddVehicleSymbol">
                                     </a>
+                                    <div class="btn-title">REGISTERED VEHICLES:</div>
                                 </div>
                                 <div class="col-md-6">
                                     <a href="#!" class="button booking d-flex align-items-center justify-content-center">NEW BOOKING
@@ -222,16 +293,185 @@
              images/newf-booking-symbol@3x.png 3x"
                                              class="NewfBookingSymbol">
                                     </a>
+                                    <div class="btn-title">BOOKED APPOINTMENTS:</div>
+                                </div>
+                            </div>
+                            <div class="vehicles_row d-flex">
+                                <div class="col-md-6">
+                                    <div class="vehicles d-flex flex-column align-items-center">
+                                        <div class="vehicles-item active d-flex justify-content-center" vehicle="vehicle1">
+                                            <div class="txt">VV-565-VV</div>
+                                            <img src="images/passenger-car-symbol-black.svg"
+                                                 class="passenger-car_symbol">
+                                            <img src="images/passenger-car-symbol-blue.svg"
+                                                 class="passenger-car_symbol active">
+                                        </div>
+                                        <div class="vehicles-item d-flex justify-content-center" vehicle="vehicle2">
+                                            <div class="txt">VV-565-VV</div>
+                                            <img src="images/truck-symbol-black.svg"
+                                                 class="passenger-car_symbol">
+                                            <img src="images/truck-symbol-blue.svg"
+                                                 class="passenger-car_symbol active">
+                                        </div>
+                                        <div class="vehicles-item d-flex justify-content-center" vehicle="vehicle3">
+                                            <div class="txt">SSS-222</div>
+                                            <img src="images/passenger-car-symbol-black.svg"
+                                                 class="passenger-car_symbol">
+                                            <img src="images/passenger-car-symbol-blue.svg"
+                                                 class="passenger-car_symbol active">
+                                        </div>
+                                    </div>
+                                    <a href="#!" class="see-btn">see the queue</a>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="transgeorgia active" transgeorgia="vehicle1">
+                                        <div class="d-flex flex-column align-items-center justify-content-center">
+                                            <div class="title_tr">TransGeorgia</div>
+                                            <div class="image">
+                                                <img src="images/tech.png" alt="">
+                                            </div>
+                                            <div class="txt">Booked: May 12th, 14:35</div>
+                                            <div class="txt">Cost: 60 GEL</div>
+                                            <div class="txt">Status: Payed</div>
+                                            <a href="##!" class="change">CHANGE</a>
+                                            <button class="delete">
+                                                <img src="images/trash-symbol.png"
+                                                     srcset="images/trash-symbol@2x.png 2x,
+                 images/trash-symbol@3x.png 3x"
+                                                     class="TrashSymbol">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="transgeorgia" transgeorgia="vehicle2">
+                                        <div class="d-flex flex-column align-items-center justify-content-center">
+                                            <div class="title_tr">TransGeorgia2</div>
+                                            <div class="image">
+                                                <img src="images/tech.png" alt="">
+                                            </div>
+                                            <div class="txt">Booked: May 12th, 14:35</div>
+                                            <div class="txt">Cost: 60 GEL</div>
+                                            <div class="txt">Status: Payed</div>
+                                            <a href="##!" class="change">CHANGE</a>
+                                            <button class="delete">
+                                                <img src="images/trash-symbol.png"
+                                                     srcset="images/trash-symbol@2x.png 2x,
+                 images/trash-symbol@3x.png 3x"
+                                                     class="TrashSymbol">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="transgeorgia" transgeorgia="vehicle3">
+                                        <div class="d-flex flex-column align-items-center justify-content-center">
+                                            <div class="title_tr">TransGeorgia3</div>
+                                            <div class="image">
+                                                <img src="images/tech.png" alt="">
+                                            </div>
+                                            <div class="txt">Booked: May 12th, 14:35</div>
+                                            <div class="txt">Cost: 60 GEL</div>
+                                            <div class="txt">Status: Payed</div>
+                                            <a href="##!" class="change">CHANGE</a>
+                                            <button class="delete">
+                                                <img src="images/trash-symbol.png"
+                                                     srcset="images/trash-symbol@2x.png 2x,
+                 images/trash-symbol@3x.png 3x"
+                                                     class="TrashSymbol">
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="mobile d-lg-none d-flex align-items-center flex-column">
+                        <div class="mobile-title text-center">Registered vehicles:</div>
+                        <div class="mobile-vehicle">
+                            <div class="top d-flex align-items-center justify-content-between">
+                                <img src="images/passenger-car-symbol-blue.svg" alt="" class="car">
+                                <div class="car-num">VV-565-VV</div>
+                                <div class="arrow">
+                                    <img src="images/chevron-left-symbol.png" alt="chevron">
+                                </div>
+                            </div>
+                            <div class="descr">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="trans">TransGeorgia</div>
+                                    <img src="images/tech.png" alt="" class="trans-photo">
+                                </div>
+                                <div class="text middle">
+                                    Booked: May 12th, 14:35
+                                </div>
+                                <div class="d-flex  align-items-center">
+                                    <div class="text">
+                                        icon: 60 GEL
+                                    </div>
+                                    <div class="text">
+                                        icon: Payed
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between buttons-row">
+                                <a href="#!" class="change">CHANGE BOOKING</a>
+                                <button class="delete">
+                                    <img src="images/trash-symbol.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="mobile-vehicle">
+                            <div class="top d-flex align-items-center justify-content-between">
+                                <img src="images/truck-symbol-blue.svg" alt="" class="car">
+                                <div class="car-num">VV-565-VV</div>
+                                <div class="arrow">
+                                    <img src="images/chevron-left-symbol.png" alt="chevron">
+                                </div>
+                            </div>
+                            <div class="descr">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="trans">TransGeorgia</div>
+                                    <img src="images/tech.png" alt="" class="trans-photo">
+                                </div>
+                                <div class="text middle">
+                                    Booked: May 12th, 14:35
+                                </div>
+                                <div class="d-flex  align-items-center">
+                                    <div class="text">
+                                        icon: 60 GEL
+                                    </div>
+                                    <div class="text">
+                                        icon: Payed
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between buttons-row">
+                                <a href="#!" class="change">CHANGE BOOKING</a>
+                                <button class="delete">
+                                    <img src="images/trash-symbol.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <a href="#!" class="new_vehicle d-flex align-items-center">
+                            <img src="images/add-vehicle-symbol1.png"
+                                 srcset="images/add-vehicle-symbol1@2x.png 2x,
+             images/add-vehicle-symbol1@3x.png 3x"
+                                 class="AddVehicleSymbol">
+                            NEW VEHICLE
+                        </a>
+                        <a href="#!" class="new_booking d-flex align-items-center">
+                            <img src="images/booking-w.png"
+                                 srcset="images/booking-w@2x.png 2x,
+             images/booking-w@3x.png 3x"
+                                 class="NewfBookingSymbol">
+                            NEW BOOKING
+                        </a>
+                        <div class="line"></div>
+                        <a href="#1" class="see_queue">SEE THE QUEUE</a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer class="footer">
+    <footer class="footer white">
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
@@ -255,5 +495,9 @@
 
     <!--Custom Scripts-->
     <script src="minJs/default.min.js"></script>
+    <script>
+        remindButton();
+        accountInfo();
+    </script>
 </body>
 </html>
