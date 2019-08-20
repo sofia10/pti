@@ -22,7 +22,7 @@ input,button{
   width: 100%;
   height: 100%;
   background-image: linear-gradient(to bottom, #17c9d4, #0a99aa);
-  z-index: 2;
+  z-index: 3;
   top: 0;
   left: -100%;
   transition: 0.4s;
@@ -216,7 +216,7 @@ input,button{
 
 .header{
   padding: 20px 0 0 0;
-  z-index: 1;
+  z-index: 2;
   height: 65px;
   &_menu{
     padding: 8px 40px;
@@ -619,14 +619,13 @@ main{
     margin-bottom: 45px;
   }
   .reset-txt{
-    @include font-style($primary-font,20px,#f8f8f8);
+    @include font-style($primary-font,17px,#f8f8f8);
     line-height: 1.3;
     letter-spacing: 0.35px;
     .text{
       margin-top: 15px;
       @include font-style($primary-font,17px,#f8f8f8);
-      width: 400px;
-      font-style: italic;
+      width: 500px;
       font-weight: 500;
       line-height: 1.18;
     }
@@ -638,11 +637,12 @@ main{
       width: 270px;
       height: 50px;
       @include border-radius(5px);
-      @include font-style($primary-font,15px,#9b9b9b);
+      @include font-style($primary-font,13px,#9b9b9b);
       line-height: 0.93;
       letter-spacing: 1.07px;
       padding-left: 20px;
       margin-bottom: 20px;
+      background-color: #FFF;
     }
     .save-btn{
       width: 270px;
@@ -1427,6 +1427,17 @@ main{
             font-family: $extra-font;
           }
         }
+        .hello-logout{
+          img{
+            width: 28px;
+            margin-right: 5px;
+          }
+          span{
+            display: block;
+            margin-top: 5px;
+            @include font-style($primary-font,10px,$light_pink);
+          }
+        }
       }
       .account-block{
         max-width: 335px;
@@ -1544,6 +1555,7 @@ main{
           background-color: transparent;
           img{
             margin-right: 30px;
+            width: 22px;
           }
         }
         .see_queue{
@@ -2295,4 +2307,85 @@ main{
   @media (max-width: 991px){
     @include flex-direction(column);
   }
+}
+
+.changed_password{
+  .forgot-title{
+    @include font-style($primary-font,20px,$light_pink);
+    line-height: 1.35;
+    letter-spacing: 0.3px;
+    margin-bottom: 45px;
+    max-width: 500px;
+    span{
+      @include font-style($primary-font,20px,$light_pink);
+      line-height: 1.35;
+      letter-spacing: 0.3px;
+    }
+  }
+  form{
+    width: 270px;
+    .form-btn{
+      border: none;
+      width: 100%;
+      height: 48px;
+      padding: 0 0 0 15px;
+      background-color: #ffffff;
+      @include border-radius(5px);
+      @include font-style($primary-font,14px,#9b9b9b);
+      line-height: 1;
+      letter-spacing: 0.9px;
+      background-repeat: no-repeat;
+      background-position: 15px;
+      background-size: 18px;
+      padding-left: 50px;
+    }
+    input.form-btn{
+      margin-bottom: 15px;
+      box-shadow: 0 2px 4px 0 #eaeaea;
+    }
+    input.email{
+      background-image: url("../../images/mail-symbol.png");
+    }
+  }
+  .primary-btn{
+    @include font-style($primary-font,14px,#FFF);
+    background-color: $aqua;
+    border: 1px solid $aqua;
+    @include border-radius(5px);
+    letter-spacing: 0.9px;
+    padding: 14px 0;
+    text-align: center;
+    width: 270px;
+    &:hover{
+      background-color: transparent;
+      color: $aqua;
+    }
+  }
+  @media (max-width: 991px){
+    form{
+      width: 330px;
+      background-color: #FFF;
+      @include border-radius(22px);
+      padding: 40px 30px;
+    }
+  }
+  @media (max-width: 767px){
+    margin-top: 50px;
+    .forgot-title{
+      font-size: 16px;
+    }
+  }
+}
+.bg_half.changed-bg{
+  @media (max-width: 991px){
+    img{
+      display: none!important;
+    }
+  }
+}
+.logo-lg{
+  width: 140px;
+}
+.logo-sm{
+  width: 66px;
 }

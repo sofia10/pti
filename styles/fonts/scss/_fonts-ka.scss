@@ -35,8 +35,34 @@
 }
 
 
+@font-face {
+  font-family: 'Raleway-extra';
+  src: url('../fonts/fonts/Raleway-ExtraBold.eot');
+  src: url('../fonts/fonts/Raleway-ExtraBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/fonts/Raleway-ExtraBold.woff2') format('woff2'),
+  url('../fonts/fonts/Raleway-ExtraBold.woff') format('woff'),
+  url('../fonts/fonts/Raleway-ExtraBold.ttf') format('truetype'),
+  url('../fonts/fonts/Raleway-ExtraBold.svg#Raleway-ExtraBold') format('svg');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-reg';
+  src: url('../fonts/fonts/Roboto-Regular.eot');
+  src: url('../fonts/fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/fonts/Roboto-Regular.woff2') format('woff2'),
+  url('../fonts/fonts/Roboto-Regular.woff') format('woff'),
+  url('../fonts/fonts/Roboto-Regular.ttf') format('truetype'),
+  url('../fonts/fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 $primary-font: 'BPG Arial';
 $caps-font: 'BPG WEB 001 Caps';
 
 $roboto: 'Roboto-med';
+
+$extra-font: 'Raleway-extra';
+
+$reg: 'Roboto-reg';
