@@ -6,16 +6,18 @@ $(document).ready(function () {
 
 function language(){
     $('.lang li.active').css("order", "1");
+
     $('li.active a').click(function(ev){
         ev.preventDefault()
     });
     $(window).click(function(){
         $('.lang').removeClass('active');
     });
-    $('.lang').click(function(){
-        $(this).addClass('active');
+    $('li.active').click(function(){
+        $('.lang').toggleClass('active');
         event.stopPropagation();
     });
+
 }
 language();
 
@@ -83,6 +85,11 @@ function steps(){
         $('.step5_row').addClass('active');
     });
 
+    $('.back_to1').click(function(){
+        $('.step2_row').removeClass('active');
+        $('.step1_row').addClass('active');
+    });
+
     $('.back_to2').click(function(){
         $('.step3_row').removeClass('active');
         $('.step2_row').addClass('active');
@@ -94,15 +101,15 @@ function steps(){
     });
 
     $('.cam-button').click(function(){
-        $('.text-block').hide();
-        $('#map').hide();
-        $('.video').show();
+        $(this).closest('.step_content').find('.text-block').hide();
+        $(this).closest('.step_content').find('.mini-map-init').removeClass('active');
+        $(this).closest('.step_content').find('.video').show();
         $(this).removeClass('active');
     });
     $('.map-button').click(function(){
-        $('.text-block').hide();
-        $('.video').hide();
-        $('#map').show();
+        $(this).closest('.step_content').find('.text-block').hide();
+        $(this).closest('.step_content').find('.video').hide();
+        $(this).closest('.step_content').find('.mini-map-init').addClass('active');
         $(this).removeClass('active');
     });
 }

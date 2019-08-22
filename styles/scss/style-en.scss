@@ -183,7 +183,7 @@ input,button{
   position: absolute;
   width: 70px;
   right: 0;
-  top: 10px;
+  top: 5px;
   height: 25px;
   overflow: hidden;
   z-index: 2;
@@ -681,6 +681,25 @@ main{
       }
     }
   }
+  @media (max-width: 1366px){
+    margin-top: 40px;
+    .title{
+      font-size: 25px;
+      margin-bottom: 25px;
+    }
+    .reset-txt{
+      font-size: 14px;
+      .text{
+        font-size: 14px;
+      }
+    }
+    form{
+      margin-top: 20px;
+      input{
+        margin-bottom: 15px;
+      }
+    }
+  }
 }
 
 .footer{
@@ -1016,6 +1035,7 @@ main{
         .vehicles{
           max-height: 230px;
           overflow: auto;
+          border-right: 1px solid #ededed;
           &-item{
             width: 215px;
             padding: 15px 0;
@@ -1119,6 +1139,9 @@ main{
       .choose{
         @include font-style($primary-font,18px,#555555);
         margin-bottom: 35px;
+        @media (max-width: 991px){
+          color: #FFF;
+        }
       }
       form{
         width: 100%;
@@ -1189,6 +1212,7 @@ main{
           border: none;
           box-shadow: 0 2px 4px 0 #eaeaea!important;
           @include border-radius(5px);
+          background-color: #FFF;
         }
         button{
           cursor: pointer;
@@ -1266,6 +1290,9 @@ main{
         }
         &.active{
           background-color: $aqua;
+          .txt{
+            color: #FFF;
+          }
           img{
             display: none;
             &.white{
@@ -1402,6 +1429,7 @@ main{
       @include border-radius(5px);
       padding: 10px 50px;
       margin: 30px auto;
+      width: 160px;
     }
     @media (max-width: 575px){
       .row{
@@ -1754,6 +1782,9 @@ main{
     @include font-style($primary-font,12px,#777777);
     letter-spacing: 1.06px;
     font-weight: 500;
+    @media (max-width: 991px){
+      color: #FFF;
+    }
   }
 }
 
@@ -1788,6 +1819,9 @@ main{
       right: 5px;
       top: 12px;
     }
+    @media (max-width: 1199px){
+      width: 100%;
+    }
   }
   .datepicker.time{
     position: relative;
@@ -1804,6 +1838,9 @@ main{
       position: absolute;
       right: 5px;
       top: 12px;
+    }
+    @media (max-width: 1199px){
+      width: 100%;
     }
   }
   .time_input{
@@ -1843,6 +1880,9 @@ main{
       img{
         margin-right: 10px;
       }
+      @media (max-width: 1199px){
+        font-size: 17px;
+      }
     }
     img{
       max-width: 100%;
@@ -1853,6 +1893,9 @@ main{
     .hidden-elem{
       @media (max-width: 991px){
         display: none;
+        &.active{
+          display: block;
+        }
       }
     }
   }
@@ -1901,6 +1944,9 @@ main{
       width: 60px;
       margin-right: 10px;
     }
+    @media (max-width: 991px){
+      background-color: #FFF;
+    }
   }
   .check-cont {
     margin-top: 10px;
@@ -1915,6 +1961,9 @@ main{
     user-select: none;
     @include font-style($primary-font,14px,#555555);
     position: relative;
+    @media (max-width: 991px){
+      color: #FFF;
+    }
   }
   .check-cont input {
     position: absolute;
@@ -2023,6 +2072,10 @@ main{
         color: #444444;
         margin-bottom: 8px;
       }
+      @media (max-width: 991px){
+        width: 300px;
+        height: 200px;
+      }
     }
     .choose_date{
       display: none;
@@ -2077,6 +2130,8 @@ main{
     margin: 50px 0 25px;
     @media (max-width: 767px){
       font-size: 24px;
+      max-width: 300px;
+      margin: 50px auto 25px;
     }
   }
   .faq-content{
@@ -2089,6 +2144,7 @@ main{
       width: 45%;
       .dropdown{
         width: 180px;
+        margin-right: 20px;
         box-shadow: 0 2px 4px 0 #eaeaea!important;
         .btn{
           border: none;
@@ -2134,9 +2190,12 @@ main{
             transform: rotate(90deg);
           }
         }
+        @media (max-width: 991px){
+          box-shadow: none!important;
+        }
       }
       .search{
-        width: 280px;
+        width: calc(100% - 200px);
         height: 36px;
         margin: auto;
         position: relative;
@@ -2147,6 +2206,9 @@ main{
           border: none;
           box-shadow: 0 2px 4px 0 #eaeaea!important;
           @include border-radius(5px);
+          @media (max-width: 991px){
+            box-shadow: none!important;
+          }
         }
         button{
           cursor: pointer;
@@ -2171,6 +2233,7 @@ main{
         max-height: 50px;
         overflow: hidden;
         .question{
+          cursor: pointer;
           padding: 9px 20px;
           box-shadow: 0 2px 4px 0 #eaeaea;
           @include border-radius(18px);
@@ -2195,13 +2258,16 @@ main{
           @include font-style($primary-font,14px,#777777);
           line-height: 1.29;
           letter-spacing: 0.06px;
-          max-width: 435px;
+          max-width: 90%;
           margin: 20px auto 0;
         }
         .que_txt{
           @include font-style($reg,14px,#777777);
           max-width: 435px;
-          margin: 15px auto 5px;
+          margin: 15px 50px 5px;
+          @media (max-width: 991px){
+            margin: 15px 35px 5px;
+          }
           .aqua{
             font-family: $primary-font;
             color: $aqua;
@@ -2220,6 +2286,14 @@ main{
           }
           .PlusSymbol{
             display: none;
+          }
+          .question{
+            .txt{
+              color: $aqua;
+            }
+          }
+          .car-num, .name{
+            color: $aqua;
           }
         }
       }
@@ -2388,4 +2462,65 @@ main{
 }
 .logo-sm{
   width: 66px;
+}
+
+@media (max-width: 1366px) and (min-height: 768px){
+  .home-page{
+    margin-top: 80px;
+  }
+}
+@media (max-width: 767px){
+  .home-page{
+    margin-top: 0;
+  }
+}
+@media (max-width: 575px){
+  .reminder-btn{
+    margin-top: 50px!important;
+  }
+}
+.inspection{
+  .left-photo{
+    width: calc(100% - 400px);
+    @include border-radius(22px);
+    overflow: hidden;
+  }
+  .right-photo{
+    width: 360px;
+    margin-left: 40px;
+    @include border-radius(22px);
+    overflow: hidden;
+  }
+  &.second-inspection{
+    margin-top: 30px;
+  }
+  @media (max-width: 1199px){
+    .left-photo, .right-photo{
+      .hidden-elem, .mini-map-init{
+        height: 200px!important;
+      }
+      .video, .hidden-elem{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  @media (max-width: 991px){
+    max-width: 100%;
+    .left-photo, .right-photo{
+      width: 100%;
+      margin: 0;
+    }
+  }
+}
+.step3_row {
+  .account-block{
+    height: 100%;
+  }
+}
+.forgot_pass{
+  margin-top: 220px;
+  @media (max-width: 1366px){
+    margin-top: 160px;
+  }
 }

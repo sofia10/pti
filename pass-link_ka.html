@@ -198,21 +198,20 @@
     </div>
 </header>
 
-<main>
+    <main>
         <div class="container">
-            <div class="content reset-page d-flex flex-column align-items-center inner-page inner-page_pass">
-                <h1 class="title">პაროლის განახლება</h1>
-                <div class="reset-txt text-center">
-                    გთხოვთ, შეიყვანეთ ახალი პაროლი.
-                    <div class="text text-center">
-                        პაროლის სიმბოლოთა რაოდენობა არ უნდა იყოს 6-ზე ნაკლები. ის უნდა შეიცავდეს მინიმუმ: ერთი ნუსხური სიმბოლო 2) ერთი მთავრული სიმბოლო 3) ერთი ციფრი 4) ერთი სიმბოლო (@;#;$).
-                    </div>
+            <div class="content reset-page d-flex flex-column align-items-center inner-page inner-page_pass pass-link">
+                <img src="images/white-check.png"
+                     srcset="images/white-check@2x.png 2x,
+             images/white-check@3x.png 3x"
+                     class="white-check">
+                <div class="pass-link_text text-center">
+                    პაროლის აღდგენის ბმული გამოგზავნილია. გთხოვთ, შეამოწმეთ თქვენი ელ-ფოსტა.
                 </div>
-                <form action="" class="d-flex flex-column form_pass">
-                    <input type="text" placeholder="ახალი პაროლი">
-                    <input type="text" placeholder="დაადასტურეთ ახალი პაროლი">
-                    <button type="button" class="save-btn">შენახვა</button>
-                </form>
+                <div class="buttons">
+                    <a href="#!" class="pass-link_btn">ცენტრების გვერდზე დაბრუნება</a>
+                    <a href="#!" class="pass-link_btn logout">გამოსვლა</a>
+                </div>
             </div>
         </div>
     </main>
